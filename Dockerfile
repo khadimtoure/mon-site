@@ -1,7 +1,7 @@
-# Image de base
+# Utilise Nginx comme serveur web
 FROM nginx:alpine
 
-# Copie tes fichiers HTML/CSS vers Nginx
-COPY src /usr/share/nginx/html
+# Copie tout le contenu du dossier courant dans Nginx
+COPY . /usr/share/nginx/html
 
 EXPOSE 80
